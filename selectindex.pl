@@ -1,4 +1,5 @@
 my @indexseq;
+my $maxindex = 192;
 my $unit = 8; # 8 for forward, 12 for reverse
 my $min = 1; # 1 for forward, 2 for reverse
 my $max = 3; # 3 for forward, 4 for reverse
@@ -34,7 +35,7 @@ else {
 	$gen->srand($seed);
 }
 
-while ($out < 192) {
+while ($out < $maxindex) {
 	my @select;
 	for (my $i = 0; $i < $unit; $i ++) {
 		$select[$i] = splice(@indexseq, int($gen->rand(scalar(@indexseq))), 1);
