@@ -1,5 +1,5 @@
 my @indexseq;
-my $maxindex = 192;
+my $maxindex = 192; # 192 for forward, 288 for reverse
 my $unit = 8; # 8 for forward, 12 for reverse
 my $min = 1; # 1 for forward, 2 for reverse
 my $max = 3; # 3 for forward, 4 for reverse
