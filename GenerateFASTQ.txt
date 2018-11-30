@@ -1,0 +1,49 @@
+[Version]
+1
+[Workflow Name]
+GenerateFASTQ
+[Display Name]
+FASTQ Only
+[Category]
+Other
+
+[Compatible Sample Prep Kits]
+TruSeq DNA PCR-Free
+TruSeq Nano DNA
+TruSeq Synthetic Long-Read DNA
+TruSeq Bovine
+Nextera DNA
+Nextera DNA Flex
+Nextera Mate Pair
+Nextera Rapid Capture Custom Enrichment
+TruSeq DNA Exome Enrichment
+TruSeq Rapid Exome
+TruSight Enrichment
+Nextera XT
+TruSeq Custom Amplicon
+TruSeq Custom Amplicon Low Input
+TruSeq Amplicon Cancer Panel
+TruSight Tumor 26 genes
+TruSight Tumor 15 genes
+TruSight Myeloid
+TruSeq ChIP-Seq
+TruSeq DNA Methylation
+TruSeq Methyl Capture EPIC
+TruSeq RNA Access
+TruSeq RNA v2
+TruSeq Stranded mRNA
+TruSeq Stranded Total RNA
+TruSeq Targeted RNA Expression
+TruSeq Small RNA
+TruSeq Ribo Profile
+ScriptSeq Complete
+ScriptSeq v2
+SureCell WTA 3'
+TruSeq RNA Exome Enrichment
+Nextera DNA Exome Enrichment
+AmpliSeq Library PLUS for Illumina (96)
+Nextera Flex for Enrichment
+Tanabe-v2-SamplePrepKit
+[Workflow-Specific Parameters]
+Label	Type	LabelInSampleSheet	TrueVal	FalseVal	DefaultVal	Required	DisplayAsCol
+Reverse Complement	BOOL	ReverseComplement	1	0	FALSE	FALSE	FALSE
