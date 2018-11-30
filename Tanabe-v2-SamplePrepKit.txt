@@ -1,0 +1,15 @@
+﻿[Version]
+1
+[Name]
+Nextera XT
+[Settings]
+ManifestExtension	AmpliconManifest
+[Compatible Index Kits]
+Nextera XT v2 Index Kit
+Nextera XT v2 Index Kit A
+Nextera XT v2 Index Kit B
+Nextera XT v2 Index Kit C
+Nextera XT v2 Index Kit D
+Nextera XT Index Kit (24 Indexes 96 Samples)
+Nextera XT Index Kit (96 Indexes 384 Samples)
+IDT-ILMN Nextera DNA UD Indexes (96 Indexes) Set A

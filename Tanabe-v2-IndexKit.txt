@@ -3,7 +3,7 @@
 [Name]
 TanabeIndex-v2
 [PlateExtension]
-nexxt
+nexxtv2
 [Settings]
 Adapter	CTGTCTCTTATACACATCTCCGAGCCCACGAGAC
 AdapterRead2	CTGTCTCTTATACACATCTGACGCTGCCGACGA
@@ -489,3 +489,5 @@ F189	AGTGAGGT
 F190	GCTAGTAC
 F191	GAACCAAC
 F192	CTCTCTAG
+[DefaultLayout_SingleIndex]
+[DefaultLayout_DualIndex]
