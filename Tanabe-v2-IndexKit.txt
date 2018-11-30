@@ -1,7 +1,7 @@
 [Version]
 1
 [Name]
-TanabeIndex-v2
+Tanabe-v2-IndexKit
 [PlateExtension]
 nexxtv2
 [Settings]
