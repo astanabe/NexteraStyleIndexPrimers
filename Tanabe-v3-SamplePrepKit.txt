@@ -1,0 +1,8 @@
+﻿[Version]
+1
+[Name]
+Tanabe-v3-SamplePrepKit
+[Settings]
+ManifestExtension	AmpliconManifest
+[Compatible Index Kits]
+Tanabe-v3-IndexKit
