@@ -1,0 +1,24 @@
+[Header]
+IEMFileVersion,5
+Investigator Name,Bar
+Experiment Name,Foo
+Date,2020/01/01
+Workflow,GenerateFASTQ
+Application,NextSeq FASTQ Only
+Instrument Type,NextSeq/MiniSeq
+Assay,Tanabe-v3-SamplePrepKit
+Index Adapters,Tanabe-v3-IndexKit
+Chemistry,Amplicon
+
+[Reads]
+151
+151
+
+[Settings]
+
+[Data]
+Sample_ID,Sample_Name,Sample_Plate,Sample_Well,I7_Index_ID,index,I5_Index_ID,index2,Sample_Project,Description
+A,A,,,R0001,AGGTGTAGAC,F0001,TAGAAGCATG,,
+B,B,,,R0002,CAAGACGATC,F0002,TCGTACTCCT,,
+C,C,,,R0003,ACTGAAGGAA,F0003,GTCTACTGAC,,
+D,D,,,R0004,ACACTGAGGT,F0004,GATGGTCAAG,,

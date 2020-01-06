@@ -1,0 +1,24 @@
+[Header]
+IEMFileVersion,5
+Investigator Name,Bar
+Experiment Name,Foo
+Date,2020/01/01
+Workflow,GenerateFASTQ
+Application,HiSeq FASTQ Only
+Instrument Type,HiSeq 3000/4000
+Assay,Tanabe-v3-SamplePrepKit
+Index Adapters,Tanabe-v3-IndexKit
+Chemistry,Amplicon
+
+[Reads]
+151
+151
+
+[Settings]
+
+[Data]
+Lane,Sample_ID,Sample_Name,Sample_Plate,Sample_Well,I7_Index_ID,index,I5_Index_ID,index2,Sample_Project,Description
+1,A,A,,,R0001,AGGTGTAGAC,F0001,TAGAAGCATG,,
+1,B,B,,,R0002,CAAGACGATC,F0002,TCGTACTCCT,,
+1,C,C,,,R0003,ACTGAAGGAA,F0003,GTCTACTGAC,,
+1,D,D,,,R0004,ACACTGAGGT,F0004,GATGGTCAAG,,

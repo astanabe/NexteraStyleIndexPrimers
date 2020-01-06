@@ -3,8 +3,9 @@
 [Name]
 Tanabe-v3-IndexKit
 [PlateExtension]
-nexxtv2
+tanabev3
 [Settings]
+Adapter	CTGTCTCTTATACACATCT
 [I7]
 R0001	AGGTGTAGAC
 R0002	CAAGACGATC
