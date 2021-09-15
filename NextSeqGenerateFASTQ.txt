@@ -3,10 +3,9 @@
 [Workflow Name]
 GenerateFASTQ
 [Display Name]
-FASTQ Only
+NextSeq FASTQ Only
 [Category]
-Other
-
+NextSeq
 [Compatible Sample Prep Kits]
 TruSeq DNA PCR-Free
 TruSeq Nano DNA
@@ -43,8 +42,6 @@ TruSeq RNA Exome Enrichment
 Nextera DNA Exome Enrichment
 AmpliSeq Library PLUS for Illumina
 Illumina DNA Prep with Enrichment
-Illumina DNA PCR-Free 2x149
-Illumina DNA PCR-Free 2x151
 Illumina RNA Prep with Enrichment
 Illumina Stranded mRNA
 Illumina Stranded Total RNA
@@ -53,6 +50,3 @@ Tanabe-v2-SamplePrepKit
 Tanabe-v3-SamplePrepKit
 [Workflow-Specific Parameters]
 Label	Type	LabelInSampleSheet	TrueVal	FalseVal	DefaultVal	Required	DisplayAsCol
-Reverse Complement	BOOL	ReverseComplement	1	0	FALSE	FALSE	FALSE
-
-

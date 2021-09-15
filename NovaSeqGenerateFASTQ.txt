@@ -3,10 +3,9 @@
 [Workflow Name]
 GenerateFASTQ
 [Display Name]
-FASTQ Only
+NovaSeq FASTQ Only
 [Category]
-Other
-
+NovaSeq
 [Compatible Sample Prep Kits]
 TruSeq DNA PCR-Free
 TruSeq Nano DNA
@@ -52,7 +51,6 @@ Tanabe-v1-SamplePrepKit
 Tanabe-v2-SamplePrepKit
 Tanabe-v3-SamplePrepKit
 [Workflow-Specific Parameters]
-Label	Type	LabelInSampleSheet	TrueVal	FalseVal	DefaultVal	Required	DisplayAsCol
-Reverse Complement	BOOL	ReverseComplement	1	0	FALSE	FALSE	FALSE
-
-
+Label	Type	LabelInSampleSheet	TrueVal	FalseVal	DefaultVal	Required	DisplayAsCol	SuppressInSampleSheet	PreventClearing
+Consumable Version	RADIOBUTTONS[Version 1, Version 1.5]	ConsumableVersion	-	-	-	TRUE	-	TRUE	TRUE
+NovaSeq Xp workflow	BOOL	NovaSeqXp	1	0	FALSE	FALSE	FALSE	TRUE	TRUE
