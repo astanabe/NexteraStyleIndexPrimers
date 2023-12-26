@@ -1,8 +1,8 @@
 ﻿[Version]
 1
 [Name]
-Tanabe-v2-SamplePrepKit
+Tanabe-v2-Nextera-SamplePrepKit
 [Settings]
 ManifestExtension	AmpliconManifest
 [Compatible Index Kits]
-Tanabe-v2-IndexKit
+Tanabe-v2-Nextera-IndexKit

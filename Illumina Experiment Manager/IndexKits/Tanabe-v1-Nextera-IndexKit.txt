@@ -1,9 +1,9 @@
 [Version]
 1
 [Name]
-Tanabe-v1-IndexKit
+Tanabe-v1-Nextera-IndexKit
 [PlateExtension]
-tanabev1
+tanabev1nextera
 [Settings]
 Adapter	CTGTCTCTTATACACATCT
 [I7]
