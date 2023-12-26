@@ -6,8 +6,8 @@ Date,2020/01/01
 Workflow,GenerateFASTQ
 Application,HiSeq FASTQ Only
 Instrument Type,HiSeq 3000/4000
-Assay,Tanabe-v3-SamplePrepKit
-Index Adapters,Tanabe-v3-IndexKit
+Assay,Tanabe-v3-Nextera-SamplePrepKit
+Index Adapters,Tanabe-v3-Nextera-IndexKit
 Chemistry,Amplicon
 
 [Reads]

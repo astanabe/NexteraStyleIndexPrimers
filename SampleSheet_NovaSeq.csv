@@ -6,8 +6,8 @@ Date,2020/01/01
 Workflow,GenerateFASTQ
 Application,NovaSeq FASTQ Only
 Instrument Type,NovaSeq
-Assay,Tanabe-v3-SamplePrepKit
-Index Adapters,Tanabe-v3-IndexKit
+Assay,Tanabe-v3-Nextera-SamplePrepKit
+Index Adapters,Tanabe-v3-Nextera-IndexKit
 Chemistry,Amplicon
 
 [Reads]
