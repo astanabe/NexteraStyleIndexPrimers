@@ -28,7 +28,10 @@ perl selectindex-v2.pl index-v2.txt > reverseindex-v2.txt
 # Make reverseprimer
 perl makereverseprimer.pl reverseindex-v2.txt > reverseprimer-v2.txt
 # Make IndexKit
-perl makeindexkit.pl forwardprimer-v2.txt reverseprimer-v2.txt Tanabe-v2-Nextera-IndexKit.txt
+mkdir -p Illumina\ Experiment\ Manager/IndexKits
+perl makeindexkit-iem.pl forwardprimer-v2.txt reverseprimer-v2.txt Illumina\ Experiment\ Manager/IndexKits/Tanabe-v2-Nextera-IndexKit.txt
+mkdir -p BaseSpace
+perl makeindexkit-bs.pl forwardprimer-v2.txt reverseprimer-v2.txt BaseSpace/Tanabe-v2-Nextera-IndexKit.tsv
 ```
 ```
 # Install Math::Random::MT::Auto
@@ -52,7 +55,10 @@ perl makecsv-v3.pl reverseprimer-v3.txt reverseprimer-v3
 # Convert CSV to XLSX
 for f in `ls *primer-v3_??.csv | grep -o -P '^[^\.]+'`; do csv2xlsx -s $f -o $f.xlsx $f.csv; done
 # Make IndexKit
-perl makeindexkit.pl forwardprimer-v3.txt reverseprimer-v3.txt Tanabe-v3-Nextera-IndexKit.txt
+mkdir -p Illumina\ Experiment\ Manager/IndexKits
+perl makeindexkit-iem.pl forwardprimer-v3.txt reverseprimer-v3.txt Illumina\ Experiment\ Manager/IndexKits/Tanabe-v3-Nextera-IndexKit.txt
+mkdir -p BaseSpace
+perl makeindexkit-bs.pl forwardprimer-v3.txt reverseprimer-v3.txt BaseSpace/Tanabe-v3-Nextera-IndexKit.tsv
 ```
 ```
 # Install Math::Random::MT::Auto
@@ -76,5 +82,8 @@ perl makecsv-v4.pl reverseprimer-v4.txt reverseprimer-v4
 # Convert CSV to XLSX
 for f in `ls *primer-v4_??.csv | grep -o -P '^[^\.]+'`; do csv2xlsx -s $f -o $f.xlsx $f.csv; done
 # Make IndexKit
-perl makeindexkit.pl forwardprimer-v4.txt reverseprimer-v4.txt Tanabe-v4-Nextera-IndexKit.txt
+mkdir -p Illumina\ Experiment\ Manager/IndexKits
+perl makeindexkit-iem.pl forwardprimer-v4.txt reverseprimer-v4.txt Illumina\ Experiment\ Manager/IndexKits/Tanabe-v4-Nextera-IndexKit.txt
+mkdir -p BaseSpace
+perl makeindexkit-bs.pl forwardprimer-v4.txt reverseprimer-v4.txt BaseSpace/Tanabe-v4-Nextera-IndexKit.tsv
 ```

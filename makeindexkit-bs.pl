@@ -35,31 +35,31 @@ if (!$forwardprimerfile || !$reverseprimerfile || !$outputfile) {
 	&errorMessage(__LINE__, "Invalid options.");
 }
 my $name = $outputfile;
+$name =~ s/^.+\///;
 $name =~ s/\.[^\.]+$//;
 unless (open($outputhandle, "> $outputfile")) {
 	&errorMessage(__LINE__, "Cannot write \"$outputfile\".");
 }
-print($outputhandle "[Version]\n1\n[Name]\n$name\n[PlateExtension]\nnexxtv2\n[Settings]\nAdapter\tCTGTCTCTTATACACATCT\n[I7]\n");
+print($outputhandle "[IndexKit]\nName\t$name\nIndexStrategy\tDualOnly\n\n[Resources]\nName\tType\tFormat\tValue\nFixedLayout\tFixedLayout\tbool\tFALSE\nMultiplate\tMultiplate\tbool\tFALSE\n\n[Indices]\nName\tSequence\tIndexReadNumber\n");
 unless (open($inputhandle, "< $reverseprimerfile")) {
 	&errorMessage(__LINE__, "Cannot read \"$reverseprimerfile\".");
 }
 while (<$inputhandle>) {
 	if (/^(R\d+)-([ACGT]+)\t/) {
-		print($outputhandle $1 . "\t" . reversecomplement($2) . "\n");
+		print($outputhandle $1 . "\t" . reversecomplement($2) . "\t1\n");
 	}
 }
 close($inputhandle);
-print($outputhandle "[I5]\n");
+print($outputhandle "\n");
 unless (open($inputhandle, "< $forwardprimerfile")) {
 	&errorMessage(__LINE__, "Cannot read \"$forwardprimerfile\".");
 }
 while (<$inputhandle>) {
 	if (/^(F\d+)-([ACGT]+)\t/) {
-		print($outputhandle $1 . "\t" . $2 . "\n");
+		print($outputhandle $1 . "\t" . $2 . "\t2\n");
 	}
 }
 close($inputhandle);
-print($outputhandle "[DefaultLayout_SingleIndex]\n[DefaultLayout_DualIndex]\n");
 close($outputhandle);
 
 sub reversecomplement {
