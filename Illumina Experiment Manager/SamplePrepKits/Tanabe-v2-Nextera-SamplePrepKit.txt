@@ -1,4 +1,4 @@
-﻿[Version]
+[Version]
 1
 [Name]
 Tanabe-v2-Nextera-SamplePrepKit

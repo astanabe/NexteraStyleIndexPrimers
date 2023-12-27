@@ -50,9 +50,11 @@ Illumina Stranded Total RNA
 Tanabe-v1-Nextera-SamplePrepKit
 Tanabe-v2-Nextera-SamplePrepKit
 Tanabe-v3-Nextera-SamplePrepKit
+Tanabe-v4-Nextera-SamplePrepKit
 Tanabe-v1-TruSeq-SamplePrepKit
 Tanabe-v2-TruSeq-SamplePrepKit
 Tanabe-v3-TruSeq-SamplePrepKit
+Tanabe-v4-TruSeq-SamplePrepKit
 [Workflow-Specific Parameters]
 Label	Type	LabelInSampleSheet	TrueVal	FalseVal	DefaultVal	Required	DisplayAsCol
 Reverse Complement	BOOL	ReverseComplement	1	0	FALSE	FALSE	FALSE

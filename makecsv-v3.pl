@@ -15,7 +15,7 @@ for (my $i = 0; $i < scalar(@ARGV); $i ++) {
 		}
 	}
 	elsif ($i == 1) {
-		while (glob("$ARGV[$i]*.*")) {
+		while (glob("$ARGV[$i]*.csv")) {
 			&errorMessage(__LINE__, "Output file already exists.");
 		}
 		$outprefix = $ARGV[$i];

@@ -39,7 +39,7 @@ $name =~ s/\.[^\.]+$//;
 unless (open($outputhandle, "> $outputfile")) {
 	&errorMessage(__LINE__, "Cannot write \"$outputfile\".");
 }
-print($outputhandle "[Version]\n1\n[Name]\n$name\n[PlateExtension]\nnexxtv2\n[Settings]\n[I7]\n");
+print($outputhandle "[Version]\n1\n[Name]\n$name\n[PlateExtension]\nnexxtv2\n[Settings]\nAdapter\tCTGTCTCTTATACACATCT\n[I7]\n");
 unless (open($inputhandle, "< $reverseprimerfile")) {
 	&errorMessage(__LINE__, "Cannot read \"$reverseprimerfile\".");
 }
@@ -59,6 +59,7 @@ while (<$inputhandle>) {
 	}
 }
 close($inputhandle);
+print($outputhandle "[DefaultLayout_SingleIndex]\n[DefaultLayout_DualIndex]\n");
 close($outputhandle);
 
 sub reversecomplement {
