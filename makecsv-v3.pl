@@ -58,11 +58,11 @@ for (my $i = 0; $i < scalar(@names) / 96; $i ++) {
 			foreach my $col (1 .. 12) {
 				if ($names[$temp] && $sequences{$names[$temp]}) {
 					print($outputhandle "$row$col,$names[$temp],$sequences{$names[$temp]}\n");
+					$temp ++;
 				}
 				else {
 					print($outputhandle "$row$col,,\n");
 				}
-				$temp ++;
 			}
 		}
 		close($outputhandle);

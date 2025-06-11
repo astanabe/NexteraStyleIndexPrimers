@@ -44,7 +44,7 @@ while (<$inputhandle>) {
 }
 close($inputhandle);
 my $temp = 0;
-for (my $i = 0; $i < scalar(@names) / 384; $i ++) {
+for (my $i = 0; $i < scalar(@names) / 48; $i ++) {
 	my $outputfile = $outprefix . '_' . sprintf("%02d", $i + 1) . '.csv';
 	if (-e $outputfile) {
 		&errorMessage(__LINE__, "Output file already exists.");
@@ -54,9 +54,9 @@ for (my $i = 0; $i < scalar(@names) / 384; $i ++) {
 			&errorMessage(__LINE__, "Cannot write \"$outputfile\".");
 		}
 		print($outputhandle "Well Position,Name,Sequence\n");
-		foreach my $row ('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P') {
-			foreach my $col (1 .. 24) {
-				if ($names[$temp] && $sequences{$names[$temp]}) {
+		foreach my $row ('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H') {
+			foreach my $col (1 .. 12) {
+				if ($row =~ /^[ACEG]$/ && $names[$temp] && $sequences{$names[$temp]}) {
 					print($outputhandle "$row$col,$names[$temp],$sequences{$names[$temp]}\n");
 					$temp ++;
 				}

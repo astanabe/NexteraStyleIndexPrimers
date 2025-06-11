@@ -43,9 +43,8 @@ while (<$inputhandle>) {
 	}
 }
 close($inputhandle);
-my $temp = 0;
-for (my $i = 0; $i < scalar(@names) / 384; $i ++) {
-	my $outputfile = $outprefix . '_' . sprintf("%02d", $i + 1) . '.csv';
+{
+	my $outputfile = $outprefix . '.csv';
 	if (-e $outputfile) {
 		&errorMessage(__LINE__, "Output file already exists.");
 	}
@@ -53,16 +52,10 @@ for (my $i = 0; $i < scalar(@names) / 384; $i ++) {
 		unless (open($outputhandle, "> $outputfile")) {
 			&errorMessage(__LINE__, "Cannot write \"$outputfile\".");
 		}
-		print($outputhandle "Well Position,Name,Sequence\n");
-		foreach my $row ('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P') {
-			foreach my $col (1 .. 24) {
-				if ($names[$temp] && $sequences{$names[$temp]}) {
-					print($outputhandle "$row$col,$names[$temp],$sequences{$names[$temp]}\n");
-					$temp ++;
-				}
-				else {
-					print($outputhandle "$row$col,,\n");
-				}
+		print($outputhandle "Name,Sequence,Scale,Purification\n");
+		foreach my $name (@names) {
+			if ($name && $sequences{$name}) {
+				print($outputhandle "$name,$sequences{$name},100nm,STD\n");
 			}
 		}
 		close($outputhandle);
